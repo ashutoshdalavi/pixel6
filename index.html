@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h3 id="h3">Loan Application Form</h3>
+    <hr>
+    <div>
+        <form action="" name="loan-form" onsubmit="return onSubmit()" method="post">
+
+
+            <label for="nm">Full Name :</label><br>
+            <input type="text" name="name" id="nm" placeholder="Full Name"><br>
+            <p id="p1"></p>
+
+
+            <label for="mail">Email :</label><br>
+            <input type="email" name="email" id="mail" placeholder="eg.abc@gmail.com"><br>
+            <p id="p2"></p>
+
+            <label for="pn">PAN :</label><br>
+            <input type="text" name="pan" id="pn" placeholder="eg.ABCDE1234F" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"><br>
+            <p id="p3"></p>
+
+            <label for="loan-amt">Loan Amount :</label><br>
+            <input type="number" name="loan-amount" id="loan_amt" placeholder="Enter Loan Amount" min="0" max="1000000"><br>
+            <p id="p4"></p>
+            <p id="words"></p>
+
+            <label for="captcha">Enter Captcha: </label><br><br>
+            <label for="" id="demo"> </label> = 
+            <input type="number" name="capt" id="captcha" >
+           
+            <a href="index.html">New Captcha</a><br><br>
+            <p id="p5"></p>
+            <p id="p6"></p>
+
+
+
+            <button type="submit" class="button" onclick="">Submit</button>
+            <br><br>
+
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
